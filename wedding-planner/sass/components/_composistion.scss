@@ -1,0 +1,62 @@
+.composistion{
+    position: relative;
+
+    &__img{
+        width:70%;
+        position: absolute;
+        outline-offset: 20px;
+        transition: all .3s;
+        @include respond(tab-port){
+           position: relative;
+        }
+    
+        @include respond(tab-land){
+            position: relative;
+        }
+
+        &--1{
+            top:0rem;
+            left:0rem;
+        }
+
+        &--2{
+            top:2.5rem;
+            right:0rem;
+        }
+
+        &--3{
+            top:18rem;
+            left:4rem;
+        }
+
+        &--1,&--2,&--3{
+            @include respond(tab-port){
+                width:100%;
+                top:0rem;
+                left:0rem;
+            }
+        
+            @include respond(tab-land){
+                width:100%;
+                top:0rem;
+                left:0rem;
+            }
+
+        }
+
+        &:hover{
+            transform: scale(1.2);
+            outline: 15px solid $color-pink-dark;
+            z-index: 10;
+        }
+       
+    }
+
+    &:hover &__img:not(:hover){
+        transform: scale(0.9);
+    }
+}
+
+
+
+

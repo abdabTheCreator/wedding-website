@@ -1,0 +1,58 @@
+.envelope{
+    width:100%;
+    height:100vh;
+    background-image: url('../img/sec2.jpg');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 50% 100%) ;   
+    
+    &__text{
+        &--1{
+            width:30%;
+            float:left;
+            margin-top:-40rem;
+            text-align: left;
+            padding: 3rem;
+        }
+        &--2{
+            width:30%;
+            float:right;
+            margin-top:-40rem;
+            text-align: right;
+            padding:3rem;
+
+        }
+        @include respond(tab-port){
+            width:90%;
+        }
+    
+        @include respond(tab-land){
+            width:90%;
+        }
+    
+        @include respond(deskptop-big){
+            width:90%;
+        }
+    }
+
+
+
+}
+/*
+.heart{
+
+    &::before, &::after{
+
+    }
+
+    &::before{
+        border-radius: 50%;
+
+        
+    }
+
+    &::after{
+        border-radius: 50%;
+    }
+
+}*/

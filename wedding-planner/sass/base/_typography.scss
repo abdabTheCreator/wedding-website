@@ -1,0 +1,89 @@
+body{
+    font-family: 'lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color:$color-grey-default;
+  }
+  .primary-heading{
+      &--main{
+        display: block;
+        font-size: 8rem;
+        text-transform: uppercase;
+        background-image: $color-pink-gradient;
+        -webkit-background-clip: text; //creates gradiant background image
+        background-clip: text;
+        color:transparent;
+        letter-spacing: 1px;
+
+        @include respond(tab-port){
+            font-size: 10px;
+        }
+    
+        @include respond(tab-land){
+            font-size: 5rem; 
+        }
+    
+        @include respond(deskptop-big){
+            font-size: 8rem; // 12/16      
+        }
+    }
+      &--sub{
+          display: block;
+          font-size: 4rem;
+          text-transform: uppercase;
+          color: $color-pink-light;
+          letter-spacing: 2px;
+          @include respond(tab-port){
+            font-size: 10px;
+        }
+    
+        @include respond(tab-land){
+            font-size: 3rem; 
+        }
+    
+        @include respond(deskptop-big){
+            font-size: 6rem; // 12/16      
+        }
+      }
+  }
+  .secondary-heading{
+      display: block;
+      color:$color-text-main;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+  }
+  .tertiary-heading{
+      display: inline-block;
+      color:$color-pink-dark; 
+      padding: 2rem 0rem;
+      text-transform: uppercase;
+      @include respond(tab-port){
+        font-size: 5px;
+    }
+
+    @include respond(tab-land){
+        font-size: 1.3rem; 
+    }
+
+    @include respond(deskptop-big){
+        font-size: 4rem; // 12/16      
+    }
+  }
+  .paragraph{
+    @include respond(tab-port){
+        font-size: 10px;
+    }
+
+    @include respond(tab-land){
+        font-size: 1.5rem;
+    }
+
+    @include respond(deskptop-big){
+        font-size: 2rem;
+    }
+  }
+
+  
+
+

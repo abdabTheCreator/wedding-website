@@ -1,0 +1,84 @@
+.package{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__content{
+        width:30%;
+        background-color: white;
+        box-shadow: $box-shadow-default;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        &:not(:first-child){
+            margin-left: $gutter-vertical-SML;
+        }
+    }
+    &__img{
+        background-size: cover;
+        height:20rem;
+        background-blend-mode: screen;
+
+        &--1{
+            background-image:linear-gradient($color-pink-dark, $color-pink-light),
+            url('../../img/package1.jpg');
+            background-position: bottom;
+        }
+        &--2{
+            background-image:linear-gradient($color-blue-dark, $color-blue-light),
+             url('../../img/couple-beach.jpg');
+            background-position: bottom;
+        }
+        &--3{
+            background-image:linear-gradient($color-purple-dark, $color-purple-light),
+             url('../../img/min-couple.jpg');
+            background-position: bottom;
+        }
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        font-weight: 300;
+        color:white;
+        text-align: right;
+        position: absolute;
+        right:11rem;
+        top: 12rem;
+        width:10%;
+    }
+
+    &__heading-span{
+        padding:1rem 2rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        &--1{
+            background-image: linear-gradient(to right bottom,$color-pink-dark, $color-pink-light);
+        }
+
+        &--2{
+            background-image: linear-gradient(to right bottom,$color-blue-dark, $color-blue-light);
+        }
+
+        &--3{
+            background-image: linear-gradient(to right bottom,$color-purple-dark, $color-purple-light);
+        }
+    }
+
+    &__details{
+        font-size: 1.3rem;
+        ul{
+            list-style-type: none;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        li{
+            padding:1.5rem;
+
+            &:not(:last-child){
+                border-bottom: 1px solid rgb(172, 175, 175);
+            }
+            
+        }
+    }
+}

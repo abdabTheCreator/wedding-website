@@ -1,0 +1,33 @@
+
+//COLOURS 
+$color-black:rgb(0, 0, 0);
+$color-grey-default: rgb(88, 83, 83);
+$color-text-main:#776c6c;
+$color-pink-dark: rgb(212, 140, 152);
+$color-pink-light: rgb(241, 158, 172);
+$color-pink-hover:rgb(255, 180, 192);
+$color-pink-gradient:linear-gradient(to right, $color-pink-dark, $color-pink-light);
+$color-background-light: rgb(234, 247, 206);
+$color-background-dark: rgb(191, 214, 141);
+$color-blue-light:rgb(140, 140, 235);
+$color-blue-dark:rgb(96, 96, 238);
+$color-purple-light:rgb(161, 83, 161);
+$color-purple-dark:rgb(145, 20, 145);
+
+//GUTTER
+$grid-width:80%;
+$gutter-vertical-SML: 4rem;
+$gutter-vertical:8rem;
+$gutter-horizontalLG:18rem;
+$gutter-horizontal:8rem;
+$gutter-horizontal-SML:4rem;
+
+//RADIUS
+$border-R-default: 10px;
+
+//SHADOW
+$box-shadow-default: 0 1rem 2rem rgba($color-black, 0.6);
+$box-shadow-active: 0 1rem 1rem rgba($color-black, 0.5);
+
+
+

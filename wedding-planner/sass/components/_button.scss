@@ -1,0 +1,50 @@
+.btn{
+    *,&:link,&:visited{
+        display: inline-block;
+        font-size: 2rem;
+        text-decoration: none;
+        margin-top: $gutter-vertical-SML;
+        transition: all .3s;
+        backface-visibility: hidden;
+    }
+
+    &--white{
+        background-color: white;
+        padding:2rem 4rem;
+        color: $color-pink-dark;
+        box-shadow: $box-shadow-default;
+        border-radius: $border-R-default;
+
+
+        &:hover{
+            transform: translateY(-5px) scaleX(1.2);
+            color:$color-pink-hover;
+            font-size: 2.4rem;
+            margin-top: 3rem;
+        }
+        &:active{
+            transform: translate(-3px);
+            box-shadow: $box-shadow-active;
+        }
+    }
+
+    &--pink{
+        padding:0rem 2rem;
+        color:$color-pink-dark;
+        border-bottom:1px solid $color-pink-dark;
+        border-radius: 0;
+        background-image: linear-gradient(128deg,
+        transparent 0%,
+        transparent 50%,
+        $color-pink-light 50%);
+        background-size: 250%;
+        transition: all .8s;
+
+        &:hover{
+            background-position: 100%;
+            color:white;
+        }
+    }
+
+    
+}
